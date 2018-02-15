@@ -1,0 +1,3 @@
+\\tsclient\Heider\Google Drive\Avans\Jaar 2 v2\MODL3\Week2\RoyalGameOfUr\RoaylGameOfUrConsole\obj\Debug\RoyalGameOfUrConsole.csprojResolveAssemblyReference.cache
+C:\Users\Heider\Google Drive\Avans\Jaar 2 v2\MODL3\Week2\RoyalGameOfUr\RoaylGameOfUrConsole\bin\Debug\RoaylGameOfUrConsole.exe.config
+\\tsclient\Heider\Google Drive\Avans\Jaar 2 v2\MODL3\Week2\RoyalGameOfUr\RoaylGameOfUrConsole\bin\Debug\RoaylGameOfUrConsole.exe.config

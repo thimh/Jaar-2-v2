@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Sokoban.Domain.Maze">
+    <Position X="9" Y="8" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAACAAEAAAAACAABAAAAAABgEAAA=</HashCode>
+      <FileName>Domain\Maze.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Presentation.InputView">
+    <Position X="6.75" Y="1" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Presentation\InputView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Presentation.OutputView">
+    <Position X="10.25" Y="1" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAACAEQAAAAAAAAABAAAA=</HashCode>
+      <FileName>Presentation\OutputView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Domain.Controller">
+    <Position X="9" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>IAAAAEAACAAAAACAAAAAgAAAFAAEAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Process\Controller.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_inputview" />
+      <Field Name="_outputview" />
+      <Field Name="_maze" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sokoban.Domain.Parser">
+    <Position X="4.5" Y="4.25" Width="2.75" />
+    <AssociationLine Name="_maze" Type="Sokoban.Domain.Maze" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.875" Y="6.767" />
+        <Point X="5.875" Y="9.305" />
+        <Point X="9" Y="9.305" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAgCKBAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Process\Parser.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_maze" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sokoban.Program">
+    <Position X="2" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Process\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

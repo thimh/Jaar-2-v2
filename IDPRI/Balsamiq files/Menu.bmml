@@ -1,0 +1,60 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1043" measuredH="404" mockupW="611" mockupH="340">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::TitleWindow" x="432" y="64" w="450" h="340" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <close>true</close>
+        <dragger>false</dragger>
+        <maximizeRestore>true</maximizeRestore>
+        <minimize>true</minimize>
+        <text>Menu</text>
+        <topheight>26</topheight>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="600" y="250" w="114" h="27" measuredW="83" measuredH="27" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>ProductenOverzicht%26bm%3BProductenOverzicht.bmml%26bm%3BProductenOverzicht.bmml%26bm%3BProductenOverzicht.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22168%2C186%2C282%2C213%22%20href%3D%22ProductenOverzicht.bmml%22%20alt%3D%22ProductenOverzicht%22%20id%3D%221%22/%3E</map>
+        <text>Producten</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Button" x="600" y="305" w="114" h="27" measuredW="86" measuredH="27" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>GebruikersOverzicht%26bm%3BGebruikersOverzicht.bmml%26bm%3BGebruikersOverzicht.bmml%26bm%3BGebruikersOverzicht.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22168%2C241%2C282%2C268%22%20href%3D%22GebruikersOverzicht.bmml%22%20alt%3D%22GebruikersOverzicht%22%20id%3D%223%22/%3E</map>
+        <text>Gebruikers</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Button" x="600" y="192" w="114" h="27" measuredW="101" measuredH="27" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>SorterenFilterenZoekenBug%26bm%3BSorterenFilterenZoekenBug.bmml%26bm%3BSorterenFilterenZoekenBug.bmml%26bm%3BSorterenFilterenZoekenBug.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22168%2C128%2C282%2C155%22%20href%3D%22SorterenFilterenZoekenBug.bmml%22%20alt%3D%22SorterenFilterenZoekenBug%22%20id%3D%224%22/%3E</map>
+        <text>Bugs%20Zoeken</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Button" x="600" y="137" w="-1" h="-1" measuredW="114" measuredH="27" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>OverzichtBug%26bm%3BOverzichtBug.bmml%26bm%3BOverzichtBug.bmml%26bm%3BOverzichtBug.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22168%2C73%2C282%2C100%22%20href%3D%22OverzichtBug.bmml%22%20alt%3D%22OverzichtBug%22%20id%3D%225%22/%3E</map>
+        <text>Bugs%20Overzicht</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Link" x="826" y="103" w="-1" h="-1" measuredW="41" measuredH="19" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>Login%26bm%3BLogin.bmml%26bm%3BLogin.bmml%26bm%3BLogin.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22394%2C39%2C435%2C58%22%20href%3D%22Login.bmml%22%20alt%3D%22Login%22%20id%3D%227%22/%3E</map>
+        <text>Logout</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::StickyNote" x="934" y="112" w="-1" h="-1" measuredW="109" measuredH="123" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Deze%20button%20is%20alleen%20aanwezig%20voor%20admins</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Arrow" x="714" y="164" w="213" h="152" measuredW="150" measuredH="100" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>bottom</direction>
+        <text/>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

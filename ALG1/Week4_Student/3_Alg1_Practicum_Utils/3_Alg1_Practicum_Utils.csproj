@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37D79001-5FD6-4A08-A521-75024156E0B0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Alg1_Practicum_Utils</RootNamespace>
+    <AssemblyName>Alg1_Practicum_Utils</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BigO.cs" />
+    <Compile Include="Exceptions\NawArrayOrderedInvalidSizeException.cs" />
+    <Compile Include="Exceptions\NawArrayOrderedOutOfBoundsException.cs" />
+    <Compile Include="Exceptions\NawQueueArrayInvalidSizeException.cs" />
+    <Compile Include="Exceptions\NawQueueArrayOutOfBoundsException.cs" />
+    <Compile Include="IBinarySearch.cs" />
+    <Compile Include="IDoublyLinkedList.cs" />
+    <Compile Include="IBubbleSort.cs" />
+    <Compile Include="IInsertionSort.cs" />
+    <Compile Include="IStack.cs" />
+    <Compile Include="ILinkedList.cs" />
+    <Compile Include="INawArray.cs" />
+    <Compile Include="INawArrayOrdered.cs" />
+    <Compile Include="INawArrayUnordered.cs" />
+    <Compile Include="Exceptions\NawArrayUnorderedInvalidSizeException.cs" />
+    <Compile Include="Exceptions\NawArrayUnorderedOutOfBoundsException.cs" />
+    <Compile Include="ISelectionSort.cs" />
+    <Compile Include="Logging\Logger.cs" />
+    <Compile Include="Logging\LogItem.cs" />
+    <Compile Include="Models\Alg1NawArray.cs" />
+    <Compile Include="Models\DoubleLink.cs" />
+    <Compile Include="Models\Link.cs" />
+    <Compile Include="Models\NAW.cs" />
+    <Compile Include="Models\RandomGenerator.cs" />
+    <Compile Include="Models\StackLink.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

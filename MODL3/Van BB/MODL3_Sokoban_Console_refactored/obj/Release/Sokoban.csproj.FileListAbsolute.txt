@@ -1,0 +1,8 @@
+C:\Users\Ger\Documents\GitHub\MODL3_Sokoban_Console\MODL3_Sokoban_Console\bin\Release\MODL3_Sokoban_Console.exe.config
+C:\Users\Ger\Documents\GitHub\MODL3_Sokoban_Console\MODL3_Sokoban_Console\bin\Release\MODL3_Sokoban_Console.exe
+C:\Users\Ger\Documents\GitHub\MODL3_Sokoban_Console\MODL3_Sokoban_Console\bin\Release\MODL3_Sokoban_Console.pdb
+C:\Users\Ger\Documents\GitHub\MODL3_Sokoban_Console\MODL3_Sokoban_Console\obj\Release\Sokoban.Doolhof.Resource1.resources
+C:\Users\Ger\Documents\GitHub\MODL3_Sokoban_Console\MODL3_Sokoban_Console\obj\Release\Sokoban.csproj.GenerateResource.Cache
+C:\Users\Ger\Documents\GitHub\MODL3_Sokoban_Console\MODL3_Sokoban_Console\obj\Release\MODL3_Sokoban_Console.exe
+C:\Users\Ger\Documents\GitHub\MODL3_Sokoban_Console\MODL3_Sokoban_Console\obj\Release\MODL3_Sokoban_Console.pdb
+C:\Users\Ger\Documents\GitHub\MODL3_Sokoban_Console\MODL3_Sokoban_Console\obj\Release\Sokoban.csprojResolveAssemblyReference.cache

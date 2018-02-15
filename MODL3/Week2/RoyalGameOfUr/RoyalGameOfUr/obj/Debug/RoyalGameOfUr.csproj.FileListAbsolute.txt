@@ -1,0 +1,6 @@
+\\tsclient\Heider\Google Drive\Avans\Jaar 2 v2\MODL3\Week2\RoyalGameOfUr\RoyalGameOfUr\bin\Debug\RoyalGameOfUr.exe.config
+\\tsclient\Heider\Google Drive\Avans\Jaar 2 v2\MODL3\Week2\RoyalGameOfUr\RoyalGameOfUr\bin\Debug\RoyalGameOfUr.exe
+\\tsclient\Heider\Google Drive\Avans\Jaar 2 v2\MODL3\Week2\RoyalGameOfUr\RoyalGameOfUr\bin\Debug\RoyalGameOfUr.pdb
+\\tsclient\Heider\Google Drive\Avans\Jaar 2 v2\MODL3\Week2\RoyalGameOfUr\RoyalGameOfUr\obj\Debug\RoyalGameOfUr.csprojResolveAssemblyReference.cache
+\\tsclient\Heider\Google Drive\Avans\Jaar 2 v2\MODL3\Week2\RoyalGameOfUr\RoyalGameOfUr\obj\Debug\RoyalGameOfUr.exe
+\\tsclient\Heider\Google Drive\Avans\Jaar 2 v2\MODL3\Week2\RoyalGameOfUr\RoyalGameOfUr\obj\Debug\RoyalGameOfUr.pdb

@@ -1,0 +1,6 @@
+C:\Users\Heider\Google Drive\Avans\Jaar 2 v2\PROG5\Week1\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe.config
+C:\Users\Heider\Google Drive\Avans\Jaar 2 v2\PROG5\Week1\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe
+C:\Users\Heider\Google Drive\Avans\Jaar 2 v2\PROG5\Week1\HelloWorld\HelloWorld\bin\Debug\HelloWorld.pdb
+C:\Users\Heider\Google Drive\Avans\Jaar 2 v2\PROG5\Week1\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csprojResolveAssemblyReference.cache
+C:\Users\Heider\Google Drive\Avans\Jaar 2 v2\PROG5\Week1\HelloWorld\HelloWorld\obj\Debug\HelloWorld.exe
+C:\Users\Heider\Google Drive\Avans\Jaar 2 v2\PROG5\Week1\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb

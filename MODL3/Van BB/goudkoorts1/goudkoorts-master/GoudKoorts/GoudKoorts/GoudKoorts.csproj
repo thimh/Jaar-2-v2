@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA6F9627-F9EC-4D60-9027-2496D44916B2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GoudKoorts</RootNamespace>
+    <AssemblyName>GoudKoorts</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\Controller.cs" />
+    <Compile Include="Controller\Parser.cs" />
+    <Compile Include="Exceptions\Exception_GameBoardIncorrectFileFormat.cs" />
+    <Compile Include="Model\Direction.cs" />
+    <Compile Include="Model\EmptyField.cs" />
+    <Compile Include="Model\StartPoint.cs" />
+    <Compile Include="Model\Cart.cs" />
+    <Compile Include="Model\Dock.cs" />
+    <Compile Include="Model\Field.cs" />
+    <Compile Include="Model\GameBoard.cs" />
+    <Compile Include="Model\MovableObject.cs" />
+    <Compile Include="Model\Rail.cs" />
+    <Compile Include="Model\Ship.cs" />
+    <Compile Include="Model\Storage.cs" />
+    <Compile Include="Model\Switch.cs" />
+    <Compile Include="Model\SwitchDirection.cs" />
+    <Compile Include="Model\Water.cs" />
+    <Compile Include="SequenceDiagramMethods.cs" />
+    <Compile Include="View\InputView.cs" />
+    <Compile Include="View\OutputView.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="UMLModellen\ClassDiagram_DataStructure.cd" />
+    <None Include="UMLModellen\ClassDiagram_Architectuur.cd" />
+    <None Include="UMLModellen\ClassDiagram_Inheritance.cd" />
+    <None Include="UMLModellen\Controller_Go.sequencediagram" />
+    <None Include="UMLModellen\SequenceDiagramMethods_move.sequencediagram" />
+    <None Include="UMLModellen\SequenceDiagramMethods_place.sequencediagram" />
+    <None Include="UMLModellen\SequenceDiagramMethods_tochar.sequencediagram" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UMLModellen\Controller_Go.sequencediagram.layout">
+      <DependentUpon>Controller_Go.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UMLModellen\SequenceDiagramMethods_move.sequencediagram.layout">
+      <DependentUpon>SequenceDiagramMethods_move.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UMLModellen\SequenceDiagramMethods_place.sequencediagram.layout">
+      <DependentUpon>SequenceDiagramMethods_place.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UMLModellen\SequenceDiagramMethods_tochar.sequencediagram.layout">
+      <DependentUpon>SequenceDiagramMethods_tochar.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameBoard\GameBoard.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

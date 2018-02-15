@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="cfc41997-e828-4a95-a279-0a6b71402cd6"
+  name="Controllers" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <suppliersInternal>
+    <dependency
+      Id="7b6fd41d-718d-4baf-b924-c99461f35593">
+      <packageMoniker
+        Id="386c66bc-c761-4374-94e1-9303520144ad"
+        LastKnownName="Views"
+        LastKnownLocation="Package_1155.uml" />
+    </dependency>
+    <dependency
+      Id="470d3b03-1bce-4106-b33e-31436f34c7a9">
+      <packageMoniker
+        Id="f4860f0b-d8f8-4e8c-aa17-86e1e5fbd40e"
+        LastKnownName="Models"
+        LastKnownLocation="Package2_1155.uml" />
+    </dependency>
+  </suppliersInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="31dc0081-7a4f-4527-9609-81d6c4fbcbb9"
+        name="Controller"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="20daa7b7-9795-4353-8b5e-6744585273ed"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="de95224e-2bb9-4bce-9658-bcedff9e955c">
+                <propertyInstance
+                  Id="dd688341-8a3b-45a1-863d-d891aa13274f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="18cf4f88-d3ea-4c6e-bca7-619cf895af37">
+                <propertyInstance
+                  Id="eca91177-1155-4493-8418-5558db7fe5d1"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="396b737c-302a-4b62-bf1e-f03d595b7010">
+                <propertyInstance
+                  Id="532b465b-f560-4da5-946a-508554286f88"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a0e55b96-f67d-4a3d-8968-4070ca4dd9f5">
+                <propertyInstance
+                  Id="448a6604-c1c2-49fa-b2be-20d7da472db3"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ea280fc0-a413-42f0-bf3f-510501b4b6f4">
+                <propertyInstance
+                  Id="3a970908-fa31-4b86-b144-40a69a5adb6d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="acb72a93-817f-43fe-ad75-b965ef81629f"
+            isDerived="false"
+            sourceEndRoleName="Controller"
+            targetEndRoleName="WordView"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6a4e7cc5-4585-471a-81c5-4c57d8d1db1c"
+              LastKnownName="WordView"
+              LastKnownLocation="Package_1155.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="08c1f398-f4e1-4ff6-aaf4-2da398dcf57b"
+                  name="Controller"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f86a22ca-4994-4a0c-8901-a6fd47126fd6"
+                  name="WordView"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8b081d14-2495-4cea-a847-350382fabd62"
+            isDerived="false"
+            sourceEndRoleName="Controller"
+            targetEndRoleName="InputView"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="63b62066-6147-47ba-aba4-f29c5510f3d6"
+              LastKnownName="InputView"
+              LastKnownLocation="Package_1155.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2e49e2fd-407c-48b8-a77d-ab4c5c41b3f0"
+                  name="Controller"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="10fd1521-a5a4-4d59-9141-e4ff811c9beb"
+                  name="InputView"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="30b968e9-bc42-43e8-b16e-ae684b62151e"
+            isDerived="false"
+            sourceEndRoleName="Controller"
+            targetEndRoleName="DigitView"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="217f54e0-b0cb-4b1e-ab1a-a0dde0bc0afb"
+              LastKnownName="DigitView"
+              LastKnownLocation="Package_1155.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c8f1df56-904c-42fe-badd-2a7180b3de4a"
+                  name="Controller"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5a6f7329-9280-4e25-9ad4-7ca147f71eac"
+                  name="DigitView"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c110ebec-8768-493a-a1d0-517f1ecf451e"
+            isDerived="false"
+            sourceEndRoleName="Controller"
+            targetEndRoleName="DotView"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="64ab5c00-7eca-4566-bad3-81b3b3510df7"
+              LastKnownName="DotView"
+              LastKnownLocation="Package_1155.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fce0e91d-39f1-4494-8d8a-ebc85a62b04e"
+                  name="Controller"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2d837666-b106-4d5f-8adb-fb1ac5044e7f"
+                  name="DotView"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fc59a19c-270f-433d-b827-d787c1d3a214"
+            isDerived="false"
+            sourceEndRoleName="Controller"
+            targetEndRoleName="Dice"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="501b82e8-ff28-4895-842e-4cc0b7bcc4e3"
+              LastKnownName="Dice"
+              LastKnownLocation="Package2_1155.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="114d7bf9-d9f8-4f9c-8ee7-46eee123899a"
+                  name="Controller"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9c81eeef-59f2-475b-ba16-3c834507f3b1"
+                  name="Dice"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="2dffbf38-e889-411f-9af6-8b4688364ac4"
+            name="Go"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4c3aff11-d690-4542-924c-4f0fce019069"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1335ac7-60f2-4d8e-8def-3277a000ed13">
+                    <propertyInstance
+                      Id="a4461006-e92a-43a4-a034-03ad78afb7c6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b0f84dd-9a88-4971-a600-e8c515e86871">
+                    <propertyInstance
+                      Id="25b43218-02a5-4f42-ab95-4fb5230f866c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75e05f5f-e0a9-4601-ade9-1ab11e3becd1">
+                    <propertyInstance
+                      Id="51fc3a16-2a23-4f9d-aba4-6a32abb6aed7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03515dfa-0e64-42d2-83be-4be7d6c22d6e">
+                    <propertyInstance
+                      Id="aa150c35-ec98-4d49-a231-8c4a2f829688"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54cf18ab-dbb9-4c88-bc50-67fbfb0c41dd">
+                    <propertyInstance
+                      Id="83231dbf-f7b1-4d17-8731-db8c49452f6f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3817f781-3208-41ee-95fc-638e6d8792bb">
+                    <propertyInstance
+                      Id="6dc6ab91-57d7-478f-b235-c629d8db017e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

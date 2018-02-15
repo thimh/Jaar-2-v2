@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Sokoban.Domain.Maze">
+    <Position X="10" Y="0.75" Width="1.5" />
+    <AssociationLine Name="TheTruck" Type="Sokoban.Domain.Truck" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.5" Y="2.524" />
+        <Point X="13.938" Y="2.524" />
+        <Point X="13.938" Y="4.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAACAAEAAAAACAABAAAAAABgEAAA=</HashCode>
+      <FileName>Domain\Maze.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TheTruck" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="_crates" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Sokoban.Domain.Crate">
+    <Position X="10.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAEAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Domain\Crate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Domain.Truck">
+    <Position X="12.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Truck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Domain.PlacableObject">
+    <Position X="8" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAEAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Domain\PlacableObject.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Spot" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sokoban.Domain.BaseField">
+    <Position X="5.75" Y="6.75" Width="2" />
+    <AssociationLine Name="Content" Type="Sokoban.Domain.PlacableObject" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.375" Y="6.75" />
+        <Point X="7.375" Y="5.813" />
+        <Point X="8" Y="5.813" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="FieldBelow" Type="Sokoban.Domain.BaseField" ManuallyRouted="true">
+      <Path>
+        <Point X="6.312" Y="8.623" />
+        <Point X="6.312" Y="8.873" />
+        <Point X="7.188" Y="8.873" />
+        <Point X="7.188" Y="8.623" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="FieldAbove" Type="Sokoban.Domain.BaseField" ManuallyRouted="true">
+      <Path>
+        <Point X="6.312" Y="6.75" />
+        <Point X="6.312" Y="6.376" />
+        <Point X="7.125" Y="6.376" />
+        <Point X="7.125" Y="6.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AABAAAAEAgAAAAEAAAgABAAAAAAABAIAAEAAAAIAAAA=</HashCode>
+      <FileName>Domain\BaseField.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="FieldToRight" />
+      <Property Name="FieldBelow" />
+      <Property Name="FieldToLeft" />
+      <Property Name="FieldAbove" />
+      <Property Name="Content" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="Sokoban.Domain.Direction">
+    <Position X="3.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAI=</HashCode>
+      <FileName>Domain\Direction.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

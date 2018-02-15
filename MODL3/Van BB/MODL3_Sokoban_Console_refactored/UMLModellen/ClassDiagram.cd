@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Sokoban.Domain.Maze">
+    <Position X="9" Y="8" Width="1.5" />
+    <AssociationLine Name="TheTruck" Type="Sokoban.Domain.Truck" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.5" Y="9.774" />
+        <Point X="14.938" Y="9.774" />
+        <Point X="14.938" Y="14" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAACAAEAAAAACAABAAAAAABgEAAA=</HashCode>
+      <FileName>Domain\Maze.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TheTruck" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="_crates" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Sokoban.Domain.Crate">
+    <Position X="9.25" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAEAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Domain\Crate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Domain.Truck">
+    <Position X="13.75" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Truck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Domain.FloorField">
+    <Position X="1.25" Y="14" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAgAAAAEAAAAABAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Domain\FloorField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Presentation.InputView">
+    <Position X="6.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Presentation\InputView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Presentation.OutputView">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAACAEQAAAAAAAAABAAAA=</HashCode>
+      <FileName>Presentation\OutputView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Domain.Controller">
+    <Position X="9" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAEAACAAAAACAAAAAgAAAFAAEAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Process\Controller.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_inputview" />
+      <Field Name="_outputview" />
+      <Field Name="_maze" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sokoban.Domain.Parser">
+    <Position X="4.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAgCKBAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Process\Parser.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_maze" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sokoban.Program">
+    <Position X="2" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Process\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Domain.PlacableObject">
+    <Position X="11.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAEAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Domain\PlacableObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Domain.BaseField">
+    <Position X="3.25" Y="11.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAEAgAAAAEAAAgABAAAAAAABAIAAEAAAAIAAAA=</HashCode>
+      <FileName>Domain\BaseField.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="FieldToRight" />
+      <Property Name="FieldBelow" />
+      <Property Name="FieldToLeft" />
+      <Property Name="FieldAbove" />
+      <Property Name="Content" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sokoban.Domain.TargetField">
+    <Position X="1.25" Y="17.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\TargetField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Domain.WallField">
+    <Position X="3.75" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABBAAAAAAgAAAAEAAAAABAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Domain\WallField.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_wall" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sokoban.Domain.EmptyField">
+    <Position X="6" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAgAAAAEAAAAABAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Domain\EmptyField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Domain.Wall">
+    <Position X="11.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Wall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Sokoban.Domain.Direction">
+    <Position X="1" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAI=</HashCode>
+      <FileName>Domain\Direction.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

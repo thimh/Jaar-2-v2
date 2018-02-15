@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EBD560A9-900F-4B61-992F-7B06A98EDDFB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sokoban</RootNamespace>
+    <AssemblyName>MODL3_Sokoban_Console</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\BaseField.cs" />
+    <Compile Include="Domain\EmptyField.cs" />
+    <Compile Include="Domain\PlacableObject.cs" />
+    <Compile Include="Domain\Maze.cs" />
+    <Compile Include="Domain\TargetField.cs" />
+    <Compile Include="Domain\Visitor.cs" />
+    <Compile Include="Domain\Wall.cs" />
+    <Compile Include="Domain\WallField.cs" />
+    <Compile Include="Doolhof\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\Crate.cs" />
+    <Compile Include="Domain\Direction.cs" />
+    <Compile Include="Domain\Truck.cs" />
+    <Compile Include="Domain\FloorField.cs" />
+    <Compile Include="Presentation\InputView.cs" />
+    <Compile Include="Presentation\MazeViewController.cs" />
+    <Compile Include="Presentation\OutputView.cs" />
+    <Compile Include="Process\Controller.cs" />
+    <Compile Include="Exceptions\Exception_MazeIncorrectFileFormat.cs" />
+    <Compile Include="Process\Parser.cs" />
+    <Compile Include="Process\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UMLModellen\SequenceDiagramStubs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="UMLModellen\ClassDiagram - ViewController.cd" />
+    <None Include="UMLModellen\MazeViewController_DrawFieldAt_2.sequencediagram" />
+    <None Include="UMLModellen\SequenceDiagramStubs_polymorphPlace_1.sequencediagram" />
+    <None Include="UMLModellen\SequenceDiagramStubs_polymorphMove_1.sequencediagram" />
+    <None Include="UMLModellen\ClassDiagram - Inheritance.cd" />
+    <None Include="UMLModellen\Classdiagram - Overview.cd" />
+    <None Include="UMLModellen\ClassDiagram.cd" />
+    <None Include="UMLModellen\Truck_Move_1.sequencediagram" />
+    <None Include="UMLModellen\Controller_Go_2.sequencediagram" />
+    <None Include="UMLModellen\ClassDiagram - Datastructure.cd" />
+    <None Include="UMLModellen\CodeMap1.dgml" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Doolhof\doolhof1.txt" />
+    <Content Include="Doolhof\doolhof2.txt" />
+    <Content Include="Doolhof\doolhof3.txt" />
+    <Content Include="Doolhof\doolhof4.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UMLModellen\MazeViewController_DrawFieldAt_2.sequencediagram.layout">
+      <DependentUpon>MazeViewController_DrawFieldAt_2.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UMLModellen\SequenceDiagramStubs_polymorphPlace_1.sequencediagram.layout">
+      <DependentUpon>SequenceDiagramStubs_polymorphPlace_1.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UMLModellen\SequenceDiagramStubs_polymorphMove_1.sequencediagram.layout">
+      <DependentUpon>SequenceDiagramStubs_polymorphMove_1.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UMLModellen\Truck_Move_1.sequencediagram.layout">
+      <DependentUpon>Truck_Move_1.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UMLModellen\Controller_Go_2.sequencediagram.layout">
+      <DependentUpon>Controller_Go_2.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doolhof\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
